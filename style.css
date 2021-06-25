@@ -1,0 +1,102 @@
+/* GENERAL STYLING */
+body {
+    font-size: 14px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #222;
+}
+
+
+.material-icons-outlined {
+    font-family: "Material Icons";
+    font-size: 24px;
+}
+
+/* SEARCH AREA */
+.wrapper {
+display: grid;
+justify-content: center;
+justify-items: center;
+}
+
+/* NAVIGATION BAR */
+nav {
+    display:grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+        "left-gutter    .   right-gutter";
+}
+
+.left-gutter{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-area: left-gutter;
+    align-items: center;
+}
+
+.right-gutter{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-area: right-gutter;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 0.5rem;
+}
+
+.right-nav-link {
+    font-size: 13px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#waffle-div:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+}
+
+#waffle-div a:hover {
+    text-decoration: none;
+}
+        
+.user-link span {
+    font-size: 32px;
+}
+
+
+/* FOOTER BAR */
+footer {
+    display:grid;
+    grid-template-columns: repeat(3, auto), 1fr, repeat(3, auto);
+    grid-template-areas: 
+    "ad bus how carbon privacy terms settings";
+}
+
+.advertise-link {
+    grid-area: ad;
+}
+.business-link {
+    grid-area: bus;
+}
+.how-it-works-link {
+    grid-area: how;
+}
+.carbon-neutral-link {
+    grid-area: carbon;
+}
+.privacy-link {
+    grid-area: privacy;
+}
+.terms-link {
+    grid-area: terms;
+}
+.settings-link {
+    grid-area: settings;
+}
