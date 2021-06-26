@@ -74,7 +74,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--main-text-color);
 }
 
 nav a:hover {
@@ -93,6 +93,11 @@ nav a:hover {
 
 .user-link span {
     font-size: 32px;
+}
+
+#profile-div:hover {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
 }
 
 /* SEARCH AREA */
@@ -165,28 +170,36 @@ footer {
     display:grid;
     grid-template-columns: repeat(3, auto), 1fr, repeat(3, auto);
     grid-template-areas: 
-    "ad bus how carbon privacy terms settings";
+    "left   central   right";
     background-color: var(--footer-color);
+    align-items: center;
 }
 
-.advertise-link {
-    grid-area: ad;
+.footer-link {
+    padding: 0.5rem;
 }
-.business-link {
-    grid-area: bus;
+
+footer a {
+    text-decoration: none;
+    color: var(--light-link-color)
 }
-.how-it-works-link {
-    grid-area: how;
+
+.left-footer-links {
+    grid-area: left;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
 }
+
 .carbon-neutral-link {
-    grid-area: carbon;
+    grid-area: central;
+    display: grid;
+    justify-items: center;
 }
-.privacy-link {
-    grid-area: privacy;
-}
-.terms-link {
-    grid-area: terms;
-}
-.settings-link {
-    grid-area: settings;
+
+.right-footer-links {
+    grid-area: right;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
 }
