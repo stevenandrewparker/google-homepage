@@ -17,19 +17,23 @@
             </div>
             <div class="search-bar">
                 <input type="text" id="search-bar" value="build this webpage">
-                <span class="material-icons-outlined" id="clear-search-bar">
+                <button class="material-icons-outlined search-bar-button" id="clear-search-bar" type="submit" title="Clear">
                     close
-                </span>
-                <span class="material-icons-outlined" id="magnifying-glass-icon">
+                </button>
+                <button class="material-icons-outlined search-bar-button" id="magnifying-glass-icon" type="submit" title="">
                     search
-                </span>
+                </button>
             </div>
             <div class="sticky-right-links">
-                <div class="nav-link right-nav-link" id="waffle-div">
-                    <a href="#" class="waffle-link" title="Google apps"><span class="material-icons-outlined">apps</span></a>
+                <div class="sticky-link-container">
+                    <a href="#" class="waffle-link" title="Google apps">
+                        <img src="/assets/apps_black_24dp.svg" alt="app menu" id="waffle-img">
+                    </a>
                 </div>
-                <div class="nav-link right-nav-link" id="profile-div">
-                    <a href="#" class="user-link" title="Google Profile"><span class="material-icons">account_circle</span></a>
+                <div class="sticky-link-container">
+                    <a href="#" class="user-link" title="Google Profile">
+                        <img src="assets/account_circle_black_24dp.svg" alt="user profile icon" id="user-img">
+                    </a>
                 </div>
             </div>
         </div>
