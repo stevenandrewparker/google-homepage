@@ -4,7 +4,7 @@
     --main-text-color: #222;
     --search-bar-grey: #9aa0a6;
     --faint-grey: #dfe1e5;
-    --light-link-color: #70577a;
+    --light-link-color: #70757a;
     --button-text-color: #202124;
 }
 
@@ -167,39 +167,78 @@ nav a:hover {
 
 /* FOOTER BAR */
 footer {
-    display:grid;
-    grid-template-columns: repeat(3, auto), 1fr, repeat(3, auto);
-    grid-template-areas: 
-    "left   central   right";
     background-color: var(--footer-color);
+    padding: 1.25rem 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-}
 
-.footer-link {
-    padding: 0.5rem;
 }
 
 footer a {
     text-decoration: none;
-    color: var(--light-link-color)
-}
-
-.left-footer-links {
-    grid-area: left;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-items: center;
+    color: var(--light-link-color);
+    display: block;
+    padding: 1rem;
 }
 
 .carbon-neutral-link {
-    grid-area: central;
-    display: grid;
-    justify-items: center;
+    min-width: 100%;
+    order: 1;
+    text-align:center
+}
+
+.carbon-neutral-link a::before {
+    content: url("/assets/leaf.png");
+}
+
+.left-footer-links {
+    display:flex;
+    order: 2;
+    min-width: 30%;
+    flex: 1 1 auto;
+    justify-content: center;
 }
 
 .right-footer-links {
-    grid-area: right;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-items: center;
+    display:flex;
+    order: 3;
+    min-width: 30%;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 75rem) { /* 1200px + */
+    .left-footer-links {
+        order: 1;
+    }
+    .carbon-neutral-link {
+        order: 2;
+        min-width: 30%;
+    }
+    .right-footer-links {
+        grid-area: right2;
+    }
+}
+
+@media (min-width: 37.5rem) { /* 600px - 1199 px*/
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "top"
+            "middle"
+            "bottom";
+    }
+    .left-footer-links {
+        grid-area: middle;
+    }
+    .carbon-neutral-link {
+        grid-area: top;
+    }
+    .right-footer-links {
+        grid-area: bottom;
+    }
 }
