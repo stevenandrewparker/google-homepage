@@ -7,7 +7,9 @@
     --light-link-color: #70757a;
     --button-text-color: #202124;
     --google-blue: #1a73e8;
+    --blue-link-color: #1a0dab;
     --main-font-size: 0.9375rem;
+    --page-desc-color: #4d5156;
 }
 
 
@@ -189,17 +191,29 @@ body {
 }
 
 
-.filter-tab a{
+.search-filters a{
     text-decoration: none;
     color: var(--light-link-color);
 }
 
-.active-tab a {
+.active-tab {
     color: var(--google-blue);
     position: relative;
     z-index: 0;
 }
 
+.tools-tab {
+    justify-self: center;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 2px rgba(0,0,0,0);
+
+}
+
+.tools-tab:hover {
+    border: 1px solid var(--faint-grey);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
 
 .active-tab a::after {
     content: "";
@@ -232,10 +246,103 @@ body {
 
 
 /* CONTENT */
-.content {
+.search-results-wrapper {
     grid-area: search-results;
     padding: 0 1rem;
+    display: grid;
+    row-gap: 2rem;
 }
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* WEB ADDRESS PORTION */
+.web-address-div {
+    padding-right: 1.5rem;
+}
+
+.web-address-div span {
+    vertical-align: top;
+    font-size: var(--main-font-size);
+}
+
+.web-page-link {
+    display: grid;
+    text-decoration: none;
+}
+.web-address-div:hover h2{
+    text-decoration: underline;
+}
+
+.http-address {
+    color: var(--main-text-color);
+    font-style: normal;
+}
+
+.http-address span {
+    color: var(--page-desc-color);
+}
+
+h2 {
+    color: var(--blue-link-color);
+    font-weight: normal;
+}
+
+.ad-indicator {
+    color: var(--main-text-color);
+    font-weight: 700;
+}
+
+.ad-link {
+    text-decoration: none;
+}
+
+.ad-link:hover h2 {
+    text-decoration: underline;
+}
+
+
+.http-address {
+    font-weight: normal;
+}
+
+/* RESULT EXPANSION BUTTONS */
+.more-about-link img {
+    width: 100%;
+    height: 1.25rem;
+}
+
+.why-this-ad img {
+    height: 1.25rem;
+    vertical-align: top;
+}
+
+
+/* PAGE DESCRIPTION PORTION */
+
+.page-description {
+    color: var(--page-desc-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER BAR */
 footer {
