@@ -5,6 +5,7 @@
     --search-bar-grey: #9aa0a6;
     --faint-grey: #dfe1e5;
     --light-link-color: #70757a;
+    --dark-link-color: #3c4043;
     --button-text-color: #202124;
     --google-blue: #1a73e8;
     --blue-link-color: #1a0dab;
@@ -13,12 +14,6 @@
     --hr-color: #ecedef;
 }
 
-.visual-spacer{
-    grid-area: footer;
-    min-height: 250px;
-    width: 100%;
-    background-color: wheat;
-}
 
 /* GENERAL STYLING */
 html {
@@ -60,7 +55,7 @@ body {
         ".              search-results     ."
         ".              related-searches   ."
         ".              page-navigation    ."
-        ".              footer             ."
+        "footer         footer             footer"
         ;
 }
 
@@ -496,11 +491,23 @@ h2 {
 }
 
 
+/* PAGE NAVIGATION PORTION */
+.page-navigation-wrapper {
+    grid-area: page-navigation;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-areas: 
+    "l-arrow g o1 o2 o3 o4 o5 o6 o7 o8 o9 o10 gle r-arrow"
+    "prev    g o1 o2 o3 o4 o5 o6 o7 o8 o9 o10 gle next"
+    ;
 
+    align-content: center;
+}
 
-
-
-
+.nav-letter {
+    vertical-align: middle;
+}
 
 
 
@@ -509,20 +516,55 @@ h2 {
 
 /* FOOTER BAR */
 footer {
+    grid-area: footer;
     background-color: var(--footer-color);
-    padding: 1.25rem 1rem;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+.footer-content {
+    margin-left: 11.25rem;
+    display: grid;
+    justify-content: flex-start;
+    row-gap: 1.25rem;
 }
 
-footer a {
+.location-div {
+    display: flex;
+    align-content: flex-start;
+}
+
+.loc {
+    text-decoration: none;
+    color: var(--dark-link-color)
+}
+
+.loc img {
+    height: .75rem;
+    vertical-align: middle;
+    filter: invert(51%) sepia(11%) saturate(212%) hue-rotate(169deg) brightness(87%) contrast(86%);
+}
+.grey-link {
+    font-weight: 700;
+    font-size: var(--main-font-size);
+}
+
+.blue-link {
+    color: var(--google-blue);
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-link {
     text-decoration: none;
     color: var(--light-link-color);
-    display: block;
-    padding: 1rem;
+    padding-right: 2rem;
 }
+
+.footer-link:hover {
+    color: var(--main-text-color);
+}
+
 
 /* MEDIA QUERIES */
