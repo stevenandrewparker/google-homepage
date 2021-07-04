@@ -495,23 +495,111 @@ h2 {
 .page-navigation-wrapper {
     grid-area: page-navigation;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(14, 1fr);
+    grid-template-columns: 1fr repeat(10, auto) 1fr;
+    margin-bottom: 3rem;
+}
+
+.page-nav-link {
+    text-decoration: none;
+    color: var(--google-blue);
+    text-align: center;
+    padding: 0 .1rem;
+    justify-self: center;
+}
+
+.page-nav-link:hover {
+    text-decoration: underline;
+}
+
+.page-nav-letter {
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+    grid-template-columns: 1.25rem;
+}
+
+#g-previous-link {
+    justify-self: flex-end; 
+}
+
+#gle-next-link {
+    justify-self: flex-start; 
+}
+
+#g-previous, #gle-next {
+    display: grid;
+    grid-template-columns: 1fr auto;
     grid-template-areas: 
-    "l-arrow g o1 o2 o3 o4 o5 o6 o7 o8 o9 o10 gle r-arrow"
-    "prev    g o1 o2 o3 o4 o5 o6 o7 o8 o9 o10 gle next"
-    ;
-
-    align-content: center;
+        "top-l  top-r"
+        "bot-l  bot-r"
+        ;
+    column-gap: 1rem;
 }
 
-.nav-letter {
-    vertical-align: middle;
+#next-letters, #prev-arrow {
+    grid-area: top-l;
 }
 
+#prev-arrow {
+    justify-self: flex-end;
+    align-self: center;
+}
 
+#next-arrow {
+    justify-self: flex-start;
+    align-self: center;
+}
 
+#prev-letters, #next-arrow {
+    grid-area: top-r;
+}
 
+#prev-text {
+    grid-area: bot-l;
+}
+
+#next-text {
+    grid-area: bot-r;
+}
+
+#prev-letters {
+    background-image: url("/assets/nav-logo-g.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: top;
+    width: 2rem;
+}
+
+.letter-img {
+    background-image: url("/assets/nav-logo-yellow-o.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+    width: 1.5rem;
+}
+
+.active-page {
+    background-image: url("/assets/nav-logo-red-o.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+    width: 1.5rem;
+}
+
+.active-page + span {
+    color: var(--main-text-color);
+}
+
+#next-letters {
+    background-image: url("/assets/nav-logo-gle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: top;
+    width: 3rem;
+}
+
+.arrow-image {
+    filter: invert(28%) sepia(81%) saturate(3868%) hue-rotate(206deg) brightness(103%) contrast(82%);
+}
 
 
 /* FOOTER BAR */
