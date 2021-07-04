@@ -1,5 +1,8 @@
 # Google Homepage Recreation
 This is the first mini-project as part of The Odin Project curriculum. 
+
+## [Live Preview](https://stevenandrewparker.github.io/google-homepage/)
+
 ## Part 1: "Easy Version: Build the Google.com homepage"
 ### Reflections:
 - I tried to go for a mobile-first design strategy, and from what I saw in resizing the browser window on Google's page, the footer is really the section that changes the most (along with the width of the search bar)
