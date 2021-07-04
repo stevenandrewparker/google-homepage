@@ -550,7 +550,7 @@ h2 {
 
 #prev-letters {
     grid-area: top-r;
-    background-image: url("/assets/nav-logo-g.png");
+    background-image: url("assets/nav-logo-g.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: top;
@@ -562,7 +562,7 @@ h2 {
 }
 
 .letter-img {
-    background-image: url("/assets/nav-logo-yellow-o.png");
+    background-image: url("assets/nav-logo-yellow-o.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: center;
@@ -570,7 +570,7 @@ h2 {
 }
 
 .active-page {
-    background-image: url("/assets/nav-logo-red-o.png");
+    background-image: url("assets/nav-logo-red-o.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: center;
@@ -583,7 +583,7 @@ h2 {
 
 #next-letters {
     grid-area: top-l;
-    background-image: url("/assets/nav-logo-gle.png");
+    background-image: url("assets/nav-logo-gle.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: top;
