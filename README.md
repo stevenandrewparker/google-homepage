@@ -11,3 +11,12 @@ This is the first mini-project as part of The Odin Project curriculum.
 - This project was more fun than I had anticipated, and I'm proud of the results so far. On to part 2...
 
 ## Part 2: "Difficult Version (optional): Build the [Google.com search results page](https://www.google.com/search?q=build+this+webpage)"
+### Reflections:
+- Based on what I saw, there really wasn't any mobile-responsive changes that occurred with search results page
+- I used a mix of Grid and FlexBox, I still tend to prefer Grid, and don't fully understand the right time to use each, but it all works how I want it to
+- The part that I struggled with the most was the page navigation at the bottom
+    - I had a really hard time aligning all the letters of "Google" with their page numbers.
+    - I saw that Google uses a table structure and background images, and so I opted for that, with a mix of Grid
+    - I'm sure there are better ways to structure that part of the page, but I feel proud that I was able to get somethign that I think looks pretty close to real
+- This project was also a lot more fun than I thought. I definitely learned a lot, like using "filter" on svg files to adjust their colors. Thanks to this [CodePen](https://codepen.io/sosuke/pen/Pjoqqp)
+- I'm eager to keep learning and move on to learning and incorporating JavaScript into my knowledge
