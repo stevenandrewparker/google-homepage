@@ -50,6 +50,15 @@ nav {
     margin: 0 1rem;
 }
 
+    nav a {
+        text-decoration: none;
+        color: var(--main-text-color);
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
 .left-gutter{
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -72,14 +81,6 @@ nav {
     font-size: 13px;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--main-text-color);
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
 
 
 #waffle-div:hover {
@@ -87,9 +88,9 @@ nav a:hover {
     border-radius: 50%;
 }
 
-#waffle-div a:hover {
-    text-decoration: none;
-}
+    #waffle-div a:hover {
+        text-decoration: none;
+    }
 
 .user-link span {
     font-size: 32px;
@@ -120,15 +121,15 @@ nav a:hover {
     padding: .35rem .5rem;
 }
 
-.search-bar:hover {
-    box-shadow: 0 0 10px var(--faint-grey);
-}
+    .search-bar:hover {
+        box-shadow: 0 0 10px var(--faint-grey);
+    }
 
-.search-bar .material-icons-outlined {
-    margin-left: 0.5rem;
-    margin-right: 0.75rem;
-    margin-top: .25rem;
-}
+    .search-bar .material-icons-outlined {
+        margin-left: 0.5rem;
+        margin-right: 0.75rem;
+        margin-top: .25rem;
+    }
 
 #search-bar {
     border:0;
@@ -138,9 +139,9 @@ nav a:hover {
     min-width: 300px;
 }
 
-#search-bar:focus {
-    outline: 0;
-}
+    #search-bar:focus {
+        outline: 0;
+    }
 
 
 .search-buttons {
@@ -158,11 +159,11 @@ nav a:hover {
     color: var(--button-text-color);
 }
 
-.button:hover {
-    /* background-color: #BADA55; */
-    border: 1px solid var(--faint-grey);
-    box-shadow: 0 1px 2px var(--faint-grey)
-}
+    .button:hover {
+        /* background-color: #BADA55; */
+        border: 1px solid var(--faint-grey);
+        box-shadow: 0 1px 2px var(--faint-grey)
+    }
 
 
 /* FOOTER BAR */
@@ -176,12 +177,12 @@ footer {
 
 }
 
-footer a {
-    text-decoration: none;
-    color: var(--light-link-color);
-    display: block;
-    padding: 1rem;
-}
+    footer a {
+        text-decoration: none;
+        color: var(--light-link-color);
+        display: block;
+        padding: 1rem;
+    }
 
 .carbon-neutral-link {
     min-width: 100%;
@@ -189,9 +190,9 @@ footer a {
     text-align:center
 }
 
-.carbon-neutral-link a::before {
-    content: url("/assets/leaf.png");
-}
+    .carbon-neutral-link a::before {
+        content: url("/assets/leaf.png");
+    }
 
 .left-footer-links {
     display:flex;
