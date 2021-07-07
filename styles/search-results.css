@@ -500,13 +500,14 @@ h2 {
     display: grid;
     grid-template-columns: 1fr repeat(10, auto) 1fr;
     margin-bottom: 3rem;
+    justify-items: center;
 }
 
 .page-nav-link {
     text-decoration: none;
     color: var(--google-blue);
     text-align: center;
-    padding: 0 .1rem;
+    padding: 0 0.05rem;
     justify-self: center;
 }
 
@@ -514,91 +515,47 @@ h2 {
         text-decoration: underline;
     }
 
-.page-nav-letter {
-    display: grid;
-    grid-template-rows: 3rem 1fr;
-    grid-template-columns: 1.25rem;
-}
-
-#g-previous-link {
-    justify-self: flex-end; 
-}
-
-#gle-next-link {
-    justify-self: flex-start; 
-}
-
-#g-previous, #gle-next {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas: 
-        "top-l  top-r"
-        "bot-l  bot-r"
-        ;
-    column-gap: 1rem;
-}
-
-.arrow-image {
-    filter: invert(28%) sepia(81%) saturate(3868%) hue-rotate(206deg) brightness(103%) contrast(82%);
-}
-
-#prev-arrow {
-    grid-area: top-l;
+.g-previous-link {
     justify-self: flex-end;
-    align-self: center;
 }
 
-#prev-letters {
-    grid-area: top-r;
-    background-image: url("assets/nav-logo-g.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: top;
-    width: 2rem;
+.g-previous {
+    background: url("assets/page-nav.webp") no-repeat;
+    background-position: -23px 0;
+    width: 30px;
+    height: 40px;
 }
 
-#prev-text {
-    grid-area: bot-l;
-}
-
-.letter-img {
-    background-image: url("assets/nav-logo-yellow-o.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: center;
-    width: 1.5rem;
+.o-letter {
+    background: url("assets/page-nav.webp") no-repeat;
+    background-position: -73px 0;
+    width: 20px;
+    height: 40px;
 }
 
 .active-page {
-    background-image: url("assets/nav-logo-red-o.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: center;
-    width: 1.5rem;
-}
+    background: url("assets/page-nav.webp") no-repeat;
+    background-position: -53px 0;
+    width: 20px;
+    height: 40px;
 
+}
     .active-page + span {
         color: var(--main-text-color);
     }
 
-#next-letters {
-    grid-area: top-l;
-    background-image: url("assets/nav-logo-gle.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: top;
-    width: 3rem;
-}
-
-#next-arrow {
-    grid-area: top-r;
+.gle-next-link {
     justify-self: flex-start;
-    align-self: center;
 }
 
-#next-text {
-    grid-area: bot-r;
+.gle-next {
+    background: url("assets/page-nav.webp") no-repeat;
+    background-position: -95px 0;
+    width: 167px;
+    height: 40px;
 }
+
+
 
 
 
