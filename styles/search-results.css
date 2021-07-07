@@ -520,21 +520,21 @@ h2 {
 }
 
 .g-previous {
-    background: url("assets/page-nav.webp") no-repeat;
+    background: url("../assets/page-nav.webp") no-repeat;
     background-position: -23px 0;
     width: 30px;
     height: 40px;
 }
 
 .o-letter {
-    background: url("assets/page-nav.webp") no-repeat;
+    background: url("../assets/page-nav.webp") no-repeat;
     background-position: -73px 0;
     width: 20px;
     height: 40px;
 }
 
 .active-page {
-    background: url("assets/page-nav.webp") no-repeat;
+    background: url("../assets/page-nav.webp") no-repeat;
     background-position: -53px 0;
     width: 20px;
     height: 40px;
@@ -549,7 +549,7 @@ h2 {
 }
 
 .gle-next {
-    background: url("assets/page-nav.webp") no-repeat;
+    background: url("../assets/page-nav.webp") no-repeat;
     background-position: -95px 0;
     width: 167px;
     height: 40px;
